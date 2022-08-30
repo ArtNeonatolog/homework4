@@ -16,9 +16,9 @@ public class Main {
     }
 
     private static void homeWork3Task3() {
-        int one = 10;
-        int two = 24;
-        int three = 37;
+        int one = 20;
+        int two = 14;
+        int three = -2;
         if(one > two && one > three) {
             System.out.println("Число " + one + " больше чем " + two + " и больше чем " + three);
         } else if(two > one && two > three) {
@@ -34,7 +34,7 @@ public class Main {
         int age = 16;
         if(age < 5) {
             System.out.println("Ребенок не может кататься на аттракционе");}
-        else if(age >= 5 && age < 14) {
+        else if(age >= 5 && age <= 14) {
             System.out.println("Ребенок может кататься только в сопровождении взрослого. Без взрослого кататься нельзя");}
         else if(age >14) {
             System.out.println("Ребенок может кататься без сопровождения взрослого");}
@@ -112,7 +112,7 @@ public class Main {
                     (wagonCapacityGeneral - wagonCapacitySeating) + " места стоячие");
         }
 
-        if (passengersInWagonNow <= 102 && passengersInWagonNow > 60) {
+        if (passengersInWagonNow <= wagonCapacityGeneral && passengersInWagonNow > wagonCapacitySeating) {
             System.out.println("Осталось " + (wagonCapacityGeneral - passengersInWagonNow) + " свободных стоячих мест");
         }
     }
@@ -123,22 +123,19 @@ public class Main {
         if (age >= 7) {
             System.out.println("Ребенок ходит в школу");}
 
-        int age2 = 20;
-        if (age2 >= 18) {
+        if (age >= 18 && age < 24) {
             System.out.println("Человек уже закончил школу и может отправляться в университет");}
 
-        int age3 = 24;
         if (age >= 24) {
             System.out.println("Человек окончил университет и ему пора искать первую работу");}
     }
 
     private static void homeWork1Task1() {
-        int age = 18;
+        int age = 20;
         if (age >= 18) {
             System.out.println("Поздравляем с совершенолетием!");}
 
-        int age2 = 17;
-        if (age2 <= 18) {
+        if (age < 18) {
             System.out.println("Возраст совершенолетия еще не наступил и нужно еще подождать");}
     }
 }
